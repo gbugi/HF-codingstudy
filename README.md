@@ -4,9 +4,20 @@
 
 <img src="https://user-images.githubusercontent.com/75151693/206977896-fcfbce77-6b00-44cb-9aee-37ef6575ddec.png" width="30%" height="10%" title="에스파" alt="algorithm"></img>             
 
-:heavy_check_mark: 매주 수요일 까지
+### :heavy_check_mark: 매주 수요일 까지
+</br>
 
-***
+### :heavy_check_mark: 참여 방법
+****
+
+1. 이 저장소를 fork 한다.
+2. 생성된 원격 저장소에 이름(영문)으로 폴더를 생성한다.
+3. 생성된 폴더에 자신의 소스코드를 업로드 한다. 
+4. 원본 저장소로 Pull Request를 한다. (매주 3문제, 매주 화요일에 Merge예정)
+
+
+
+
 
 ### :pushpin: 지정문제
 
