@@ -11,11 +11,11 @@
 ### :pushpin: 지정문제
 
 
-| # | 주차 | 문제 출처(플랫폼)&nbsp;&nbsp; | 문제 | 레벨&nbsp;&nbsp; | link |
-|---|---|---|---|---|---|
-| 1 | 1주차 | 프로그래머스 | 신고 결과 받기 | Lv1 | https://school.programmers.co.kr/learn/courses/30/lessons/92334 |
-| 2 | 1주차 | 프로그래머스 | [1차] 비밀지도 | Lv1 | https://school.programmers.co.kr/learn/courses/30/lessons/17681 |
-| 3 | 1주차 | 프로그래머스 | 푸드 파이트 대회 | Lv1 | https://school.programmers.co.kr/learn/courses/30/lessons/134240 |
+| # | 주차 | 문제 | 레벨 | link |
+|---|---|---|---|---|
+| 1 | 1주차 | 신고 결과 받기 | Lv1 | https://school.programmers.co.kr/learn/courses/30/lessons/92334 |
+| 2 | 1주차 | [1차] 비밀지도 | Lv1 | https://school.programmers.co.kr/learn/courses/30/lessons/17681 |
+| 3 | 1주차 | 푸드 파이트 대회 | Lv1 | https://school.programmers.co.kr/learn/courses/30/lessons/134240 |
 
 </br>   
 
