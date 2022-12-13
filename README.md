@@ -4,7 +4,7 @@
 
 <img src="https://user-images.githubusercontent.com/75151693/206977896-fcfbce77-6b00-44cb-9aee-37ef6575ddec.png" width="30%" height="10%" title="에스파" alt="algorithm"></img>             
 
-### :heavy_check_mark: 매주 수요일 까지
+### :heavy_check_mark: 매주 목요일 까지
 </br>
 
 ### :heavy_check_mark: 참여 방법
