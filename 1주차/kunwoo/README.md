@@ -1,4 +1,4 @@
-## 1번 풀이
+# 1번 풀이
 문제를 보고 Python dictionary와 set자료형을 써야겠다고 생각이 들어, Java에서는 HashMap과 HashSet을 사용하면 좋겠다고 판단을 하고 접근하였다.   
 
 두개의 HashMap을 생성했는데,
@@ -61,6 +61,118 @@ class Solution {
             List<String> reportList = list.stream().filter(s -> s.startsWith(user + " ")).collect(Collectors.toList());
             return reportList.stream().filter(s -> count.getOrDefault(s.split(" ")[1], 0) >= k).count();
         }).mapToInt(Long::intValue).toArray();
+    }
+}
+```
+</br>
+
+***
+# 2번 풀이
+이 문제를 해결하기 위해서는 아래와 같은 로직을 따른다. 
+1. 10진수를 2진수로 변환하고
+2. 변환한 수들을 다시 리스트(Integer형)에 담고,
+3. 리스트의 각 인덱스의 원소들을 더해서 자리수가 n자리가 아니라면 빈 자리만큼 0을 채워준다(String.format사용).
+4. 그 다음, replace메서드를 통해 1과2는 -> "#" , 0은 -> " "(공백) 으로 치환해주고 answer 배열에 넣어준다. 
+
+***
+하지만 최종 제출을 했더니, 아래와 같이 테스트 케이스 2번과 6번에서 시간초과가 떴었다.   
+![image](https://user-images.githubusercontent.com/75151693/207253851-d5085827-9679-4aa2-9524-ee74984093c1.png)   
+
+## 시간초과뜬 코드 
+```Java
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Solution {
+    public String[] solution(int n, int[] arr1, int[] arr2) {
+        List<> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+        String[] answer = new String[n];
+
+        for(int ar1 : arr1){
+            list1.add(DecimalToBinary(ar1));
+        }
+
+        for(int ar2 : arr2){
+            list2.add(DecimalToBinary(ar2));
+        }
+        
+        for(int i=0; i<n; i++){
+            answer[i]= String.format("%0"+n+"d", list1.get(i)+list2.get(i))
+                    .replace("1", "#")
+                    .replace("2", "#")
+                    .replace("0", " ");
+        }
+
+        return answer;
+    }
+
+    static int DecimalToBinary(int number) {
+        int count = 0;
+        int binary_num = 0;
+
+        while(number!=0){
+            int remainder = number % 2; 
+            double num_of_digits = Math.pow(10, count); 
+            binary_num += remainder * num_of_digits; 
+            number /= 2;
+            count ++;
+        }
+        return binary_num;
+    }
+}
+```
+
+이류를 검색해보니, 테스트 케이스 2,6번은 대입하는 값이 크기 때문에,   
+**변환 과정에서 Integer형으로 표현할 수 있는 최대 값을 초과**해서 런타임 에러가 발생한다고 한다.   
+그래서 Integer 타입을 Long타입으로 바꿔줬더니 해결되었다.
+
+## 해결한 코드
+```Java
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Solution {
+    public String[] solution(int n, int[] arr1, int[] arr2) {
+        List<Long> list1 = new ArrayList<>();
+        List<Long> list2 = new ArrayList<>();
+        String[] answer = new String[n];
+
+        // 주어진 배열을 이진수로 나타내고 리스트에 담기
+        for(int ar1 : arr1){
+            list1.add(DecimalToBinary(ar1));
+        }
+
+        for(int ar2 : arr2){
+            list2.add(DecimalToBinary(ar2));
+        }
+
+        for(int i=0; i<n; i++){
+            // 배열에 삽입하는 과정에서 만약 자리수가 n자리가 아니면 부족한 부분만큼 0을 채워넣어줌
+            answer[i]= String.format("%0"+n+"d", (list1.get(i) + list2.get(i)))
+                    .replace("1", "#")
+                    .replace("2", "#")
+                    .replace("0", " ");
+        }
+
+        return answer;
+    }
+
+    // 10진수를 2진수로 변환해주는 메서드
+    static Long DecimalToBinary(int number) {
+        int count = 0;
+        long binary_num = 0;
+
+        while(number!=0){
+            int remainder = number % 2; // 나머지(0 or 1)
+            double num_of_digits = Math.pow(10, count); // 자릿수
+            binary_num += (long)(remainder * num_of_digits); // 자리수 * 나머지
+            number /= 2;
+            count ++;
+        }
+        return binary_num;
     }
 }
 ```
