@@ -124,56 +124,44 @@ class Solution {
 }
 ```
 
-## 해결방법
-이류를 검색해보니, 테스트 케이스 2,6번은 대입하는 값이 크기 때문에,   
+## 해결방법(해결코드는 위의 java파일)
+이유유를 검색해보니, 테스트 케이스 2,6번은 대입하는 값이 크기 때문에,   
 **변환 과정에서 Integer형으로 표현할 수 있는 최대 값을 초과**해서 런타임 에러가 발생한다고 한다.   
 그래서 Integer 타입을 Long타입으로 바꿔줬더니 해결되었다.
 
-## 해결한 코드
+</br>
+
+***
+# 3번 풀이
+3번 문제풀이는 아래와 같은 로직을 따른다.
+1. food배열에서 데이터를 가져오는데 1을 제외하고, 2로 나누어지면 (total + 가져온값), 나머지가 1이면 (total + 가져온값 -1)   
+이유는    
+=> 값이 1일때는 2로 나누었을때 몫이 0 이므로, 먹을 음식이 없기 때문이고.   
+=> 예를 들어 값이 5일때는 몫이 2지만 나머지가 1이므로 1을 버려줘야 하기 때문이다.   
+2. 그렇게 정해진 total 변수로 int형 answer_arr 초기선언한다(크기 total)   
+3. 다시 food배열의 크기만큼(첫 인덱스 1부터) for문을 돌면서, answer_arr에 값을 넣어준다.   
+4. 값을 넣어줄 때, answer_arr에 값을 넣어준 마지막 index를 기억해서 다음 index부터 값을 넣게하고,   
+   (food배열에서 가져온 값/2) * 2 만큼 인덱스에 넣어준다.   
+5. StringBuilder를 통해 answer_arr 배열의 데이터를 가져오면서 합쳐주고, toString을 통해 String으로 변환한다.   
+
+</br>
+
+## 다른사람의 풀이코드
+제출 후, 풀이를 봤는데 처음 내가 생각한 방식(배열에 값을 넣을때 절반만 넣고 reverse 시켜서 뒤에 인덱스에 그대로 추가시키는방법)을 구현하신 분이 있어서 가져왔다.    
+=> 본인은 어떻게 저 생각을 코드로 구현 해야할지 몰랐었음.
+
 ```Java
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 class Solution {
-    public String[] solution(int n, int[] arr1, int[] arr2) {
-        List<Long> list1 = new ArrayList<>();
-        List<Long> list2 = new ArrayList<>();
-        String[] answer = new String[n];
+    public String solution(int[] food) {
+        String answer = "0";
 
-        // 주어진 배열을 이진수로 나타내고 리스트에 담기
-        for(int ar1 : arr1){
-            list1.add(DecimalToBinary(ar1));
-        }
-
-        for(int ar2 : arr2){
-            list2.add(DecimalToBinary(ar2));
-        }
-
-        for(int i=0; i<n; i++){
-            // 배열에 삽입하는 과정에서 만약 자리수가 n자리가 아니면 부족한 부분만큼 0을 채워넣어줌
-            answer[i]= String.format("%0"+n+"d", (list1.get(i) + list2.get(i)))
-                    .replace("1", "#")
-                    .replace("2", "#")
-                    .replace("0", " ");
+        for (int i = food.length - 1; i > 0; i--) {
+            for (int j = 0; j < food[i] / 2; j++) {
+                answer = i + answer + i; 
+            }
         }
 
         return answer;
-    }
-
-    // 10진수를 2진수로 변환해주는 메서드
-    static Long DecimalToBinary(int number) {
-        int count = 0;
-        long binary_num = 0;
-
-        while(number!=0){
-            int remainder = number % 2; // 나머지(0 or 1)
-            double num_of_digits = Math.pow(10, count); // 자릿수
-            binary_num += (long)(remainder * num_of_digits); // 자리수 * 나머지
-            number /= 2;
-            count ++;
-        }
-        return binary_num;
     }
 }
 ```
