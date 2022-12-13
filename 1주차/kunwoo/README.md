@@ -164,7 +164,7 @@ class Solution {
     // 10진수를 2진수로 변환해주는 메서드
     static Long DecimalToBinary(int number) {
         int count = 0;
-        long binary_num = 0;
+        long binary_num = 0L;
 
         while(number!=0){
             int remainder = number % 2; // 나머지(0 or 1)
