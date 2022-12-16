@@ -27,6 +27,9 @@
 | 1 | 1주차 | 프로그래머스 | [신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334) | Lv1 |
 | 2 | 1주차 | 프로그래머스 | [[1차] 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681) | Lv1 | 
 | 3 | 1주차 | 프로그래머스 | [푸드 파이트 대회](https://school.programmers.co.kr/learn/courses/30/lessons/134240) | Lv1 |
+| 4 | 2주차 | 프로그래머스 | [햄버거 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/133502) | Lv1 |
+| 5 | 2주차 | 프로그래머스 | [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) | Lv1 |
+| 6 | 2주차 | 프로그래머스 | [프린터](https://school.programmers.co.kr/learn/courses/30/lessons/42587) | Lv2 |
 
 </br>   
 
