@@ -30,6 +30,9 @@
 | 4 | 2주차 | 프로그래머스 | [햄버거 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/133502) | Lv1 |
 | 5 | 2주차 | 프로그래머스 | [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) | Lv1 |
 | 6 | 2주차 | 프로그래머스 | [프린터](https://school.programmers.co.kr/learn/courses/30/lessons/42587) | Lv2 |
+| 7 | 3주차 | 프로그래머스 | [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | Lv2 |
+| 8 | 3주차 | 프로그래머스 | [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) | Lv2 |
+| 9 | 3주차 | 프로그래머스 | [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583) | Lv2 |
 
 </br>   
 
