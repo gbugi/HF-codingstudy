@@ -16,5 +16,5 @@
 
 1. 전화번호는 중복이 없기에, HashSet 자료구조로 객체를 생성하였고, 배열의 원소들을 먼저 add해주었다.   
 
-2. phone_book 배열을 순차적으로 돌면서, 뽑은 원소의 0번째 자리부터 (1 ~ 마지막-1 자리)까지 차례차례 substring해준것이 set에 담은 원소들과 비교(contains메소드)하여 일치하는 것이 있다면 return false, 없다면 return true해준다.
+2. phone_book 배열을 순차적으로 돌면서, 뽑은 원소의 0번째 자리부터 (1 ~ 마지막-1 자리)까지 차례차례 substring해준것이 set에 담은 원소들과 비교(contains메소드)하여 일치하는 것이 있다면 return false, 없다면 return true해준다.   
 => 마지막-1자리 까지 substring하는 이유는 **자기자신을 비교하면 안되기 때문**
