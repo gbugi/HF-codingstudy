@@ -1,8 +1,7 @@
 ## 사내 코딩 스터디 동아리
 안녕하세요!:smile: 사내 코딩스킬 향상을 위한 스터디, **HF-codingstudy**입니다.
 
-
-<img src="https://user-images.githubusercontent.com/75151693/206977896-fcfbce77-6b00-44cb-9aee-37ef6575ddec.png" width="30%" height="10%" title="에스파" alt="algorithm"></img>             
+<img src="https://user-images.githubusercontent.com/75151693/209645847-0faa00a5-533a-41f0-b5e8-bd13c7dc3531.png" width="30%" height="10%" title="에스파" alt="algorithm"></img>             
 
 ### :heavy_check_mark: 매주 목요일 까지
 </br>
