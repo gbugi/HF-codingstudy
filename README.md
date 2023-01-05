@@ -32,6 +32,9 @@
 | 7 | 3주차 | 프로그래머스 | [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | Lv2 |
 | 8 | 3주차 | 프로그래머스 | [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) | Lv2 |
 | 9 | 3주차 | 프로그래머스 | [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583) | Lv2 |
+| 10 | 4주차 | 프로그래머스 | [숫자의 표](https://school.programmers.co.kr/learn/courses/30/lessons/12924) | Lv2 |
+| 11 | 4주차 | 프로그래머스 | [이진 변환 반복하기](https://school.programmers.co.kr/learn/courses/30/lessons/70129) | Lv2 |
+| 12 | 4주차 | 프로그래머스 | [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945) | Lv2 |
 
 </br>   
 
