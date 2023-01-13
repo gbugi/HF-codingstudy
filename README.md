@@ -35,8 +35,8 @@
 | 10 | 4주차 | 프로그래머스 | [숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924) | Lv2 |
 | 11 | 4주차 | 프로그래머스 | [이진 변환 반복하기](https://school.programmers.co.kr/learn/courses/30/lessons/70129) | Lv2 |
 | 12 | 4주차 | 프로그래머스 | [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945) | Lv2 |
-| 13 | 5주차 | 프로그래머스 | [구명보](https://school.programmers.co.kr/learn/courses/30/lessons/42885) | Lv2 |
-| 14 | 5주차 | 프로그래머스 | [1차] 캐시(https://school.programmers.co.kr/learn/courses/30/lessons/17680) | Lv2 |
+| 13 | 5주차 | 프로그래머스 | [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) | Lv2 |
+| 14 | 5주차 | 프로그래머스 | [[1차] 캐시](https://school.programmers.co.kr/learn/courses/30/lessons/17680) | Lv2 |
 
 </br>   
 
