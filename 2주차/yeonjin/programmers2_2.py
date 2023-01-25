@@ -4,15 +4,15 @@ def solution(survey, choices):
     dict = {'RT':0,'CF':0,'JM':0,'AN':0}
     
     for i, s in enumerate(survey):
+        score = choices[i] - 4
         if s in dict : 
-            score = choices[i] * (-1) + 4
+            dict[s] += score
         else :
-            score = choices[i] - 4
             s = s[::-1]
-        dict[s] += score
-
+            dict[s] -= score
+            
     for k, v in dict.items():
-        if v >= 0:
+        if v <= 0:
             result = k[0]
         else:
             result = k[1]
