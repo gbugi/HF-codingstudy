@@ -40,6 +40,9 @@
 | 15 | 6주차 | 프로그래머스 | [다음 큰 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12911) | Lv2 |
 | 16 | 6주차 | 프로그래머스 | [귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476) | Lv2 |
 | 17 | 6주차 | 프로그래머스 | [두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667) | Lv2 |
+| 18 | 7주차 | 프로그래머스 | [영어 끝말잇기](https://school.programmers.co.kr/learn/courses/30/lessons/12981) | Lv2 |
+| 19 | 7주차 | 프로그래머스 | [점프와 순간 이동](https://school.programmers.co.kr/learn/courses/30/lessons/12980) | Lv2 |
+| 20 | 7주차 | 프로그래머스 | [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539) | Lv2 |
 
 </br>   
 
